@@ -1,4 +1,4 @@
-import { Server } from 'socket.io';
+import { socketIo, Server } from 'socket.io';
 
 let io;
 let userCounter = 1;
