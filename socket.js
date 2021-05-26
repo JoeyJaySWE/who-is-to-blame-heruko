@@ -7,7 +7,7 @@ module.exports = {
   init: (server) => {
     const io = socketIo(server, {
       cors: {
-        origin: 'https://example.com',
+        origin: '*',
         methods: ['GET', 'POST'],
         allowedHeaders: ['my-custom-header'],
         credentials: true,
