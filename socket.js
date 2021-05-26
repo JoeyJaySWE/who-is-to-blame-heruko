@@ -11,6 +11,7 @@ module.exports = {
         origin: 'https://who-is-to-blame.netlify.app',
       },
     });
+    console.log(io);
     let players = {
       hostName: '',
       player2: '',
