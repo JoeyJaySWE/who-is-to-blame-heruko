@@ -1,4 +1,4 @@
-const socketIo,{Server} = require('socket.io');
+import {Server} from 'socket.io';
 
 let io;
 let userCounter = 1;
