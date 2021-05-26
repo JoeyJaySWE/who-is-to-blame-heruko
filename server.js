@@ -1,4 +1,3 @@
-console.log('found server file');
 const server = require('express')();
 const http = require('http').createServer(server);
 
@@ -11,9 +10,8 @@ const http = require('http').createServer(server);
 // });
 
 const port = process.env.PORT || 8000;
+const io = require('./socket').init(http);
 
 const serverListner = http.listen(port, () => {
   console.log('Server started up');
 });
-
-const io = require('./socket').init(serverListner);
