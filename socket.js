@@ -7,7 +7,7 @@ module.exports = {
   init: (server) => {
     const io = socketIo(server, {
       cors: {
-        origin: '*',
+        origin: 'https://who-is-to-blame.netlify.app',
       },
     });
     let players = {
