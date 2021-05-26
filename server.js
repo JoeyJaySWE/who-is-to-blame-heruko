@@ -1,5 +1,4 @@
 const server = require('express')();
-const http = require('http').createServer(server);
 
 import http from 'http';
 import { Server } from 'socket.io';
