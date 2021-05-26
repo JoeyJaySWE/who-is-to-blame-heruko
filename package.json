@@ -15,6 +15,7 @@
   "engines": {
     "node": "16.x"
   },
+  "type": "module",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
