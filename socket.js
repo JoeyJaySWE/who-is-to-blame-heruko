@@ -8,9 +8,6 @@ module.exports = {
     const io = socketIo(server, {
       cors: {
         origin: 'http://localhost:8080',
-        methods: ['GET', 'POST'],
-        allowedHeaders: ['my-custom-header'],
-        credentials: true,
       },
     });
     let players = {
