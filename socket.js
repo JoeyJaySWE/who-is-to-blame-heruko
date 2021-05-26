@@ -1,11 +1,11 @@
-// const socketIo = require('socket.io');
+const socketIo = require('socket.io');
 
 // let io;
 let userCounter = 1;
 
 module.exports = {
   init: (server) => {
-    const io = require('socket.io')(httpServer, {
+    const io = socketIo(server, {
       cors: {
         origin: 'https://example.com',
         methods: ['GET', 'POST'],
