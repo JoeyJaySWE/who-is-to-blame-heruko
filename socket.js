@@ -7,7 +7,7 @@ module.exports = {
   init: (server) => {
     const io = socketIo(server, {
       cors: {
-        origin: 'http://localhost:8080',
+        origin: '*',
       },
     });
     let players = {
