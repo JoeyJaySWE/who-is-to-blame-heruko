@@ -15,10 +15,6 @@ const io = new Server(httpServer, {
 
 const port = process.env.PORT || 8000;
 
-const serverListner = http.listen(port, () => {
-  console.log('Server started up');
-});
-
 let userCounter = 1;
 
 let players = {
@@ -100,4 +96,8 @@ io.on('connection', (socket) => {
 io.on('PlayerLoad', () => {
   console.log('Recived data');
   socket.emit('PlayerList', JSON.stringify(players));
+});
+
+httpServer.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
 });
