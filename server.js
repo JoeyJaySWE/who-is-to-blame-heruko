@@ -21,7 +21,6 @@ const serverListner = http.listen(port, () => {
   console.log('Server started up');
 });
 
-let io;
 let userCounter = 1;
 
 let players = {
