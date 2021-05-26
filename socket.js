@@ -1,10 +1,11 @@
 const socketIo = require('socket.io');
-
+console.log('inisde socket.js');
 // let io;
 let userCounter = 1;
 
 module.exports = {
   init: (server) => {
+    console.log('inside exporter');
     const io = socketIo(server, {
       cors: {
         origin: 'https://who-is-to-blame.netlify.app',
