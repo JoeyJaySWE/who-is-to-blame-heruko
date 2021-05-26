@@ -1,11 +1,11 @@
-import {Server} from 'socket.io';
+import { Server } from 'socket.io';
 
 let io;
 let userCounter = 1;
 
 module.exports = {
   init: (server) => {
-   io = new Server(httpServer, {
+    io = new Server(httpServer, {
       cors: { origin: '*' },
     });
     let players = {
