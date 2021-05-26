@@ -103,5 +103,3 @@ io.on('PlayerLoad', () => {
   console.log('Recived data');
   socket.emit('PlayerList', JSON.stringify(players));
 });
-
-return io;
